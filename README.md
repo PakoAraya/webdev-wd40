@@ -1,6 +1,7 @@
 # webdev-wd40
 
-
+# Inicio
+Se da comienzo al primer baño de WD-40 para quitarse el oxido de los conocimientos en cuanto al desarrollo web.
 
 ## Getting started
 
