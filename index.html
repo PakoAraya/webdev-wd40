@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de @pakodev</title>
+    
+    <!-- Metadatos y enlaces basados en la imagen -->
+    <link rel="canonical" href="https://midu.dev">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <link rel="icon" type="image/jpg" href="/images/yo.jpg">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Portfolio de @pakodev 👨‍💻</h1>
+        
+        <nav>
+            <a class="link" href="#experiencia">Experiencia</a> 
+            <a class="link" href="#proyectos">Proyectos</a> <!-- enlaces internos -->
+            <a class="link" href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
+        </nav>
+    </header>
+
+		<dialog>
+			<h1>¿Sabías que puedes abrir un modal así?</h1>
+      <p>Y es totalmente nativo!!!</p>
+      <button id="hide">Cerrar Modal</button>
+		</dialog>
+
+    <button id="show">Ver más información</button>
+
+    <script>
+      window,show.addEventListener("click",()=>{
+        window.dialog.showModal()
+      })
+
+      window.dialog.addEventListener("click",()=>{
+        window.dialog.close()
+      })
+    </script>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        
+        <!-- Sección de introducción -->
+        <section id="introduccion">
+            <p class="description">+15 años de experiencia como <strong>Ingeniero de Software</strong>. Creador y divulgador de programación.</p>
+        </section>
+
+        <!-- Sección de experiencia laboral -->
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>Adevinta - 2022</li>
+                <li>Hubii - 2020</li>
+                <li>Nacencia - 2015</li>
+            </ul>
+            <img src="/images/yo.jpg" alt="Foto de perfil de midudev" width="250">
+        </section>
+
+        <!-- Sección de portafolio/proyectos -->
+        <section id="proyectos">
+            <h2>Proyectos realizados</h2>
+
+            <article>
+                <h3>Mis tecnologías favoritas</h3>
+                <ol>
+                    <li value="10">HTML</li>
+                    <li value="9">CSS</li>
+                    <li value="5">JavaScript</li>
+                    <li value="4">Node.js</li>
+                </ol>
+                <button>Haz clic aqui</button>
+            </article>
+            
+            <article>
+                <h4>La página de Tesla</h4>
+            </article>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+          <h2>Formulario de Contacto</h2>
+          <form action="#">
+            <fieldset>
+              <legend>Información Personal</legend>
+              <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="PaKo Araya" required>
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="pako@pakocorp.com" required>
+              </div>
+            </fieldset>
+
+            <!-- Información Adicional -->
+            
+            <fieldset>
+              <legend>Información Adicional</legend> 
+              <div>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="(541) 754-3010" required>
+              </div>
+            </fieldset>
+
+            <fieldset>
+
+            <!-- Otros -->
+            <legend>Otros</legend>
+
+            <div>
+              <label for="motivo">¿Por qué quieres contactar?</label>
+              <br>
+              <select id="motivo" name="motivo">
+                <option value="trabajo">Trabajo</option>
+                <option value="trabajo">Marketing</option>
+                <option value="trabajo">Colaboración</option>
+                <option value="trabajo">Ayuda</option>
+              </select>
+            </div>
+          
+            <div>
+              <label for="terminos">¿Aceptas los términos?</label>
+              <input type="checkbox" id="terminos" name="terminos">
+            </div>
+          
+            <div>
+              <label for="lenguaje">¿Con qué lenguaje quieres que...?</label>
+              <br>
+              <input type="text" id="lenguaje" name="lenguaje">
+            </div>
+          </fieldset>
+        
+          <br>
+  <button type="submit">Enviar contacto</button>
+
+          </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
